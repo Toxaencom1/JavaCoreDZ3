@@ -2,6 +2,12 @@ package app.base;
 
 import java.util.Random;
 
+/**
+ * Base, abstract class of employee
+
+ * contains static String[] fields to fabric first and last names
+ * and one abstract method to descendants
+ */
 public abstract class Employee {
     //region Static Fields
     /**

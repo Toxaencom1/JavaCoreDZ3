@@ -1,5 +1,12 @@
 package app.base;
 
+
+/**
+ *  Descendant class of Employee,
+
+ *  contains id of employee and counter.
+ *  Implements the method calculateSalary()
+ */
 public class Worker extends Employee {
     {
         /*
@@ -48,8 +55,8 @@ public class Worker extends Employee {
 
     @Override
     public String toString() {
-        return String.format("id = %d, %15s %15s; %10s; Среднемесячная заработная плата" +
-                        ": %10.2f ₸, Количество МРП в месяц = %.0f",
+        return String.format("id = %d, %10s %-10s; %10s; Average monthly salary" +
+                        ": %10.2f ₸, Number of MCI per month = %.0f",
                 id, lastName, firstName, this.getClass().getSimpleName(), salary, mciAmount);
     }
 }

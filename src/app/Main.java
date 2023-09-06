@@ -27,14 +27,14 @@ public class Main {
         EmployeeList employeeListSort = new EmployeeList(employeeList.getEmployeesListClone());
         System.out.println(employeeList);
         System.out.println();
-        System.out.println("Сортировка по зарплате");
+        System.out.println("Sort by salary");
         employeeListSort.salarySort();
         employeeListSort.print();
         System.out.println();
-        System.out.println("Сортировка по Фамилии/Имени");
+        System.out.println("Sort by Last Name / First Name");
         employeeListSort.nameSort();
         employeeListSort.print();
-        System.out.println("\nИзначальный список");
+        System.out.println("\nInitial List");
         employeeList.print();
     }
 }

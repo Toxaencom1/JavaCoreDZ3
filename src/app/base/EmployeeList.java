@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Random;
 
+/**
+ * Simulates a list of employees
+
+ * Also fill list with objects of the Employee class with random parameters
+ */
 public class EmployeeList {
     //region Field and Static Fields
     /**
@@ -130,7 +135,7 @@ public class EmployeeList {
     @Override
     public String toString() {
         print();
-        return "Список Работников";
+        return "List of Employees";
     }
     //endregion
 
