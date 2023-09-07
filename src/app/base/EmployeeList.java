@@ -2,14 +2,16 @@ package app.base;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.Random;
+
 
 /**
  * Simulates a list of employees
 
  * Also fill list with objects of the Employee class with random parameters
  */
-public class EmployeeList {
+public class EmployeeList implements Iterable<Employee>{
     //region Field and Static Fields
     /**
      * Static random object
@@ -27,7 +29,7 @@ public class EmployeeList {
     /**
      * List of employees
      */
-    private ArrayList<Employee> employees;
+    private final ArrayList<Employee> employees;
     //endregion
 
     //region Constructors
@@ -156,5 +158,11 @@ public class EmployeeList {
         this.comparator = new NameComparator();
         employees.sort(comparator);
     }
+
+    @Override
+    public Iterator<Employee> iterator() {
+        return employees.iterator();
+    }
+
     //endregion
 }

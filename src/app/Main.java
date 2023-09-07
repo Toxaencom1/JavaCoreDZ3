@@ -21,6 +21,10 @@ public class Main {
     public static void main(String[] args) {
         // Демонстрация возможностей
         EmployeeList employeeList = new EmployeeList(10);
+        for (Employee employee : employeeList) {
+            System.out.println(employee);
+        }
+        System.out.println();
         Employee employeeTest = new Worker("Тахаев", "Антон", 150);
         employeeList.add(employeeTest);
         employeeList.remove(0);
